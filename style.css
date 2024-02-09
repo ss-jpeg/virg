@@ -10,35 +10,67 @@ min-height: 100%;
 
 body {
   background-color: #080a0c;
+
 }
 
-.bord{
+.sidebar {
+  height: 100vh;
+  border: solid 0px black;
+  border-color: rgb(37, 46, 55);
+  border-right-width: 1px;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+}
+
+.siwrap {
+  width: 70px;
+  padding-left: 12px;
+}
+
+.bord {
   border: solid 0px black;
   border-color: rgb(37, 46, 55);
   border-top-width: 1px;
 }
 
-.headcon{
+.maxw {
+  max-width: 586px;
+  margin: 0 auto
+}
+
+.borrl {
+  border: solid 1px black;
+  border-color: rgb(37, 46, 55);
+  border-top: 0px;
+  border-bottom: 0px;
+}
+
+.headcon {
   padding-bottom: 6px;
   padding-top: 6px;
   flex-direction: row;
 }
-.head{
+
+.head {
   padding: 6px 12px;
   align-items: center;
   display: flex;
 
   justify-content: space-between;
 }
-.head svg{
+
+.head svg {
+  margin-top: 6px;
   width: 30px;
 }
 
-.head b{
+.head b {
   font-size: 20px;
   letter-spacing: 0.15px;
 }
-.blank{
+
+.blank {
   height: 18px;
   width: 18px;
 }
@@ -68,6 +100,15 @@ b {
   height: 42px;
   border-radius: 21px;
 }
+
+.sidebar .icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 24px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
 
 .row div {
   padding-left: 8px;
@@ -122,7 +163,7 @@ b {
   margin-bottom: 10px;
 }
 
-.likes{
+.likes {
   margin-top: 5px;
   margin-bottom: 15px;
   padding: 10px;
@@ -131,40 +172,48 @@ b {
   border-left: 0;
   border-right: 0;
 }
-.likes b{
+
+.likes b {
   margin-right: 4px;
 }
 
-.favcon{
+.favcon {
   padding-left: 10px;
 
 }
-.favr{
+
+.favr {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   color: rgb(102, 127, 153);
 }
-.favr div{
+
+.favr div {
   height: 24px;
 }
 
-.mt1{
+.mt1 {
   margin-top: 2px;
 }
 
-.num{
+.num {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
-.num p{
+
+.num p {
   margin-left: 5px;
   margin-top: 2px;
   color: rgb(102, 127, 153);
 }
 
-.repcon{
+footer {
+  opacity: 0;
+}
+
+.repcon {
   position: fixed;
   left: 0px;
   right: 0px;
@@ -172,13 +221,15 @@ b {
   bottom: 15px;
   background-color: rgb(8, 10, 12);
 }
-.rep{
+
+.rep {
   padding: 10px 16px;
   display: flex;
   flex-direction: row;
   align-items: center;
 }
-.rep p{
+
+.rep p {
   padding-left: 12px;
   font-size: 17px;
   color: #fff;
@@ -206,4 +257,18 @@ b {
 
 .bottblank {
   height: 400px;
+}
+
+.mbon{
+  opacity: 0;
+}
+
+@media screen and (max-width: 740px) {
+  .mbon {
+    opacity: 1;
+  }
+  .mboff {
+    opacity: 0;
+  }
+
 }
